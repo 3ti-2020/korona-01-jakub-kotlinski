@@ -1,0 +1,28 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.header {
+  background: yellow;
+  height: 10vh;
+  display: flex;
+}
+
+h2 {
+  margin: auto;
+}
+
+.menu {
+  background: blue;
+  height: 5vh;
+}
+
+.container {
+  height: 85vh;
+  background: green;
+}
