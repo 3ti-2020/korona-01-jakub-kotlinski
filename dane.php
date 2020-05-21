@@ -12,45 +12,24 @@
         $servername = "localhost";
         $username = "root";
         $password = "";
-        $dbname = "jakub_kotlinski";
+        $dbname = "jakub_kotliński";
 
         $conn = new mysqli($servername, $username, $password, $dbname);
 
         echo("<table>");
     
-        $sql = "SELECT imie, nazwisko, uprawnienia FROM `osoby`, `uprawnienia` WHERE id_uprawnienia=uprawnienia.id";
-        $result = $conn->query( $sql );
-        echo("<tr>
-        <th>Imie</th>
-        <th>Nazwisko</th>
-        <th>Uprawnienia</th>
-        ");
-
-        While( $row = $result->fetch_assoc() )
-    {
-        echo("<tr>");
-        echo ( "<td>".$row['imie']."</td><td>".$row['nazwisko']."</td><td>".$row['uprawnienia'].
-        "</td>");
-        echo("</tr>");
-    }
-
-        echo("</table>");
-        echo("<br>");
-        echo("<table>");
-    
-        $sql = "SELECT * FROM spis_produktow";
+        $sql = "SELECT * FROM klienci";
         $result = $conn->query( $sql );
         echo("<tr>
         <th>Id</th>
-        <th>Nazwa</th>
-        <th>Ilość w magazynie</th>
-        <th>Ilość sprzedanych</th>
+        <th>Imie</th>
+        <th>Nazwisko</th>
         ");
 
         While( $row = $result->fetch_assoc() )
     {
         echo("<tr>");
-        echo ( "<td>".$row['id']."</td><td>".$row['nazwa']."</td><td>".$row['ilosc_magazyn']."</td><td>".$row['ilosc_sprzedarz'].
+        echo ( "<td>".$row['id']."</td><td>".$row['imie']."</td><td>".$row['nazwisko']
         "</td>");
         echo("</tr>");
     }

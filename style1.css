@@ -1,0 +1,143 @@
+* 
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body 
+{
+    font-family: sans-serif;
+}
+
+h1
+{
+    margin: auto;
+}
+h2
+{
+    margin: auto;
+}
+h3 
+{
+    margin: auto;
+}
+
+.item1
+{
+    grid-area: item1;
+    display: flex;
+    background: rgb(21, 80, 175);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main
+{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 2vh;
+}
+
+.name
+{
+    width: 100%;
+    height: 3vh;
+    display: flex;
+    margin: 1rem;
+}
+
+.item2
+{
+    grid-area: item2;
+    border-top: 1px solid blue;
+    background: rgb(18, 85, 209);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 25%;
+    grid-template-areas:
+        "nr1 nr1"
+        "nr2 nr3";
+}
+
+.nr1
+{
+    grid-area: nr1;
+    height: 26vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gta
+{
+    height: 23vh;
+    width: 17vh;
+    border: 1vh solid gold;
+}
+
+.nr2
+{
+    grid-area: nr2;
+    height: 26vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mine
+{
+    height: 23vh;
+    width: 17vh;
+    border: 1vh solid silver;
+}
+
+.nr3
+{
+    grid-area: nr3;
+    height: 26vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mario
+{
+    height: 23vh;
+    width: 17vh;
+    border: 1vh solid rgb(48, 19, 10);
+}
+
+.container
+{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: 
+        "item1 item1"
+        "item2 item2";
+}
+
+.link1
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:  rgb(36, 106, 238);
+    text-decoration: none;
+    width: 5vh;
+    height: 5vh;
+}
+
+.home
+{
+    width: 4vh;
+    height: 4vh;
+}
+
+.link1:hover
+{
+    background:  rgb(77, 138, 252);
+}
